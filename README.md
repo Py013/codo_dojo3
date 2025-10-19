@@ -6,5 +6,10 @@ Terceiro (na verdae 4o) coding dojo da py013 - Tema Webscraping
 * Sempre teremos um piloto e um navegador. Somente o piloto tem acesso ao teclado e mouse, e no período de 5 minutos irá realizar a codificação da solução, o navegador é a única pessoa que pode falar com o piloto durante esse tempo. Terminado os 5 minutos, o piloto vai para a platéia, o navegador assume o papel de piloto, e uma pessoa da platéia assume o papel do navegador. Esse ciclo se repete a cada 5 minutos.
 
 # Desafio
-* A partir de um arquivo .csv contendo uma lista de produtos, o programa deve pesquisar o preço dos produtos em sites de comércio eletrôncio (Ex. Magazine Luiza, Carrefour, Casas Bahia). 
-* A saída deverá ser a atualização do arquivo .csv com o preço dos produtos localizados em cada site, e na tela deverá apresentar em qual site a soma de todos os produtos foi mais barato.
+* A partir de um arquivo .csv contendo uma lista de cidades, o programa deve pesquisar a temperatura atual de cada uma.
+* Use a API de clima do `wttr.in` para buscar a temperatura atual de cada cidade. Por exemplo: https://wttr.in/Santos?format=j1 retorna um JSON com dados de Santos.
+* Atualize o .csv para criar uma coluna `temperatura_c`, com a temperatura atual em Celsius (propriedade `temp_C` do JSON), e coloque em cada linha a temperatura da cidade respectiva.
+* A tela também exibirá as temperaturas registradas para as cidades, informando quais cidades possuem a maior e menor temperatura entre elas.
+
+# Desafios opcionais
+* Também adicione a condição de céu (dentro de `current_condition` no JSON) de cada cidade no arquivo .csv
